@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alan Cetina — Backend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<canvas id="particles"></canvas>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">alan<span>.</span>cetina</a>
+  <ul class="nav-links">
+    <li><a href="#about">sobre mí</a></li>
+    <li><a href="#projects">proyectos</a></li>
+    <li><a href="#skills">stack</a></li>
+    <li><a href="#contact">contacto</a></li>
+    <li></li>
+    <li><a href="Alan_DeLos_Santos_CV_.pdf" target="_blank" class="nav-cv" title="Ver CV">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="display:inline-block;vertical-align:middle;margin-right:6px"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>CV</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-tag">Backend Developer</div>
+  <h1 class="hero-name">
+    <span class="glitch" data-text="Alan">Alan</span>
+    <span class="glitch" data-text="Cetina" style="color:transparent;-webkit-text-stroke:1px rgba(0,212,255,0.38)">Cetina</span>
+  </h1>
+  <p class="hero-role">Diseño y construyo sistemas backend robustos,<br>escalables y listos para producción.</p>
+  <div class="hero-cta">
+    <a href="#projects" class="btn btn-primary">Ver proyectos</a>
+    <a href="#contact" class="btn btn-ghost">Contacto</a>
+    <a href="Alan_DeLos_Santos_CV_.pdf" target="_blank" class="btn btn-ghost" style="display:flex;align-items:center;gap:8px;">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+      CV
+    </a>
+  </div>
+  <div class="scroll-hint"><div class="scroll-line"></div>scroll</div>
+</section>
+
+<!-- ABOUT -->
+<div class="wrap" id="about">
+  <div class="sec-label reveal" data-n="01">Sobre mí</div>
+  <div class="about-inner reveal">
+    <h2>Diseño sistemas que<br><em>resuelven</em> problemas reales</h2>
+    <p>Soy backend developer especializado en Python, APIs REST y arquitecturas de microservicios. Me enfoco en construir sistemas eficientes, bien documentados y preparados para escalar en producción.</p>
+    <p>Tengo experiencia trabajando con pipelines de Machine Learning, orquestación de contenedores con Docker y despliegue en plataformas cloud. Me gusta entender el problema antes de escribir la primera línea de código.</p>
+    <p>Actualmente abierto a nuevas oportunidades como backend developer — ya sea en producto, consultoría o freelance.</p>
+  </div>
+</div>
+
+<!-- PROJECTS -->
+<div class="wrap" id="projects">
+  <div class="sec-label reveal" data-n="02">Proyectos</div>
+
+  <div class="projects-list">
+
+    <!-- SignSpeak -->
+    <div class="pcard reveal">
+      <div class="ppreview">
+        <div class="prev-ss">
+          <div class="titlebar">
+            <div class="dot" style="background:#ff5f57"></div>
+            <div class="dot" style="background:#febc2e"></div>
+            <div class="dot" style="background:#28c840"></div>
+            <span class="bar-label">signspeakapp · live</span>
+          </div>
+          <div class="cambox">
+            <div class="scan"></div>
+            <div class="corner tl"></div><div class="corner tr"></div>
+            <div class="corner bl"></div><div class="corner br"></div>
+            <span class="hand">🤟</span>
+          </div>
+          <div class="ssout">
+            <span class="ssout-lbl">OUTPUT →</span>
+            <span class="ssout-txt">Hola, mundo</span>
+          </div>
+        </div>
+      </div>
+      <div class="pinfo">
+        <div class="ptag">01 · ML + Backend</div>
+        <h3 class="ptitle">SignSpeak</h3>
+        <p class="pdesc">Traducción de Lengua de Señas Mexicana a español en tiempo real. Arquitectura de microservicios con redes neuronales LSTM, MediaPipe y deploy automatizado.</p>
+        <div class="pstack">
+          <span class="pill">FastAPI</span><span class="pill">TensorFlow</span>
+          <span class="pill">MediaPipe</span><span class="pill">React</span>
+          <span class="pill">Docker</span><span class="pill">GCP</span>
+          <span class="pill">GitHub Actions</span>
+        </div>
+        <div class="plinks">
+          <a href="#" class="plink-btn plink-demo" target="_blank">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+            Ver demo
+          </a>
+          <a href="https://github.com/SignSpeak-Team" class="plink-btn plink-gh" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            Repositorio
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- AI Waiter -->
+    <div class="pcard reveal rd1">
+      <div class="ppreview">
+        <div class="prev-ai">
+          <div class="titlebar">
+            <div class="dot" style="background:#ff5f57"></div>
+            <div class="dot" style="background:#febc2e"></div>
+            <div class="dot" style="background:#28c840"></div>
+            <span class="bar-label">ai-waiter · hf.space</span>
+          </div>
+          <div class="bubble bu">¿Qué me recomiendas de postre?</div>
+          <div class="bubble bb">¡Tenemos flan napolitano recién hecho y pastel tres leches! 🍮</div>
+          <div class="vrow">
+            <div class="wb" style="animation-delay:.00s"></div>
+            <div class="wb" style="animation-delay:.10s"></div>
+            <div class="wb" style="animation-delay:.20s"></div>
+            <div class="wb" style="animation-delay:.30s"></div>
+            <div class="wb" style="animation-delay:.40s"></div>
+            <div class="wb" style="animation-delay:.15s"></div>
+            <div class="wb" style="animation-delay:.05s"></div>
+            <span style="font-family:'DM Mono',monospace;font-size:9px;color:rgba(0,212,255,.5);margin-left:8px;letter-spacing:.08em">VOICE ACTIVE</span>
+          </div>
+        </div>
+      </div>
+      <div class="pinfo">
+        <div class="ptag">02 · IA + Voz</div>
+        <h3 class="ptitle">AI Waiter</h3>
+        <p class="pdesc">Asistente de restaurante con voz generada por IA. Recomienda platillos, toma pedidos y responde preguntas en lenguaje natural.</p>
+        <div class="pstack">
+          <span class="pill">FastAPI</span><span class="pill">React</span>
+          <span class="pill">Edge-TTS</span><span class="pill">LLM API</span>
+          <span class="pill">HuggingFace</span>
+        </div>
+        <div class="plinks">
+          <a href="#" class="plink-btn plink-demo" target="_blank">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+            Ver demo
+          </a>
+          <a href="https://github.com/alanctinaDev" class="plink-btn plink-gh" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            Repositorio
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dispatch -->
+    <div class="pcard reveal rd2">
+      <div class="ppreview">
+        <div class="prev-dp">
+          <div class="dphd">
+            <div class="dpav">🚚</div>
+            <div class="dpnm">Dispatch Bot</div>
+            <div class="dpst"><span style="width:5px;height:5px;border-radius:50%;background:#25D366;display:inline-block"></span>En línea</div>
+          </div>
+          <div class="dpmsg dpin">📦 Pedido #1042 — 2x Tacos · Col. Centro</div>
+          <div class="dpmsg dpout" style="align-self:flex-end">Asignado a Manuel ✓</div>
+          <div class="dpbadge">PEDIDO DESPACHADO ✓</div>
+        </div>
+      </div>
+      <div class="pinfo">
+        <div class="ptag">03 · Backend + Mensajería</div>
+        <h3 class="ptitle">Dispatch</h3>
+        <p class="pdesc">Sistema de despacho de pedidos integrado con WhatsApp. Manejo de eventos asíncronos con Redis para negocios de entrega a domicilio.</p>
+        <div class="pstack">
+          <span class="pill">FastAPI</span><span class="pill">Redis</span>
+          <span class="pill">WhatsApp API</span><span class="pill">Python</span>
+          <span class="pill">Railway</span>
+        </div>
+        <div class="plinks">
+          <a href="#" class="plink-btn plink-demo" target="_blank">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+            Ver demo
+          </a>
+          <a href="https://github.com/alanctinaDev" class="plink-btn plink-gh" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            Repositorio
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /projects-list -->
+
+<!-- SKILLS -->
+<div class="wrap" id="skills">
+  <div class="sec-label reveal" data-n="03">Stack &amp; Herramientas</div>
+  <div class="skills-grid">
+    <div class="skill reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span class="skill-n">Python</span></div>
+    <div class="skill reveal rd1"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span class="skill-n">JavaScript</span></div>
+    <div class="skill reveal rd2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript"><span class="skill-n">TypeScript</span></div>
+    <div class="skill reveal rd3"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"><span class="skill-n">Java</span></div>
+    <div class="skill reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI"><span class="skill-n">FastAPI</span></div>
+    <div class="skill reveal rd1"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring"><span class="skill-n">Spring</span></div>
+    <div class="skill reveal rd2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"><span class="skill-n">React</span></div>
+    <div class="skill reveal rd3"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow"><span class="skill-n">TensorFlow</span></div>
+    <div class="skill reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg" alt="Keras"><span class="skill-n">Keras</span></div>
+    <div class="skill reveal rd1"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL"><span class="skill-n">PostgreSQL</span></div>
+    <div class="skill reveal rd2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"><span class="skill-n">MySQL</span></div>
+    <div class="skill reveal rd3"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"><span class="skill-n">MongoDB</span></div>
+    <div class="skill reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis"><span class="skill-n">Redis</span></div>
+    <div class="skill reveal rd1"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"><span class="skill-n">Docker</span></div>
+    <div class="skill reveal rd2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS" style="filter:brightness(1.2)"><span class="skill-n">AWS</span></div>
+    <div class="skill reveal rd3"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="GCP"><span class="skill-n">GCP</span></div>
+    <div class="skill reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" alt="Nginx"><span class="skill-n">Nginx</span></div>
+    <div class="skill reveal rd1"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"><span class="skill-n">Git</span></div>
+    <div class="skill reveal rd2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="filter:invert(1) saturate(0)"><span class="skill-n">GitHub</span></div>
+    <div class="skill reveal rd3"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman"><span class="skill-n">Postman</span></div>
+    <div class="skill reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux"><span class="skill-n">Linux</span></div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
+    <h2 class="contact-h reveal">¿Trabajamos<br><em>juntos?</em></h2>
+    <p class="contact-sub reveal">Abierto a posiciones de backend developer, proyectos freelance y colaboraciones.</p>
+    <div class="contact-links reveal">
+      <a href="mailto:alanctina26@gmail.com" class="clink">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        Email
+      </a>
+      <a href="https://github.com/alanctinaDev" class="clink" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        GitHub
+      </a>
+      <a href="https://linkedin.com/in/alanctina-dev" class="clink" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>Diseñado &amp; construido por Alan Cetina · 2026</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
