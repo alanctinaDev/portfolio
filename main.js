@@ -57,3 +57,17 @@ const obs = new IntersectionObserver(entries=>{
 },{threshold:.1});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 
+// ── SIGNSPEAK TEXT ANIMATION ──
+const ssText = document.getElementById('ss-text');
+if (ssText) {
+  const ssWords = ["Hola, mundo", "SignSpeak", "¿Cómo estás?", "Inteligencia", "MediaPipe"];
+  let ssIdx = 0;
+  setInterval(() => {
+    ssText.style.opacity = 0;
+    setTimeout(() => {
+      ssIdx = (ssIdx + 1) % ssWords.length;
+      ssText.textContent = ssWords[ssIdx];
+      ssText.style.opacity = 1;
+    }, 200);
+  }, 2000);
+}

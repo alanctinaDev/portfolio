@@ -76,11 +76,21 @@
             <div class="scan"></div>
             <div class="corner tl"></div><div class="corner tr"></div>
             <div class="corner bl"></div><div class="corner br"></div>
-            <span class="hand">🤟</span>
+            <span class="hand" style="display:flex;justify-content:center;align-items:center;">
+              <svg viewBox="0 0 100 100" width="45" height="45" style="filter: drop-shadow(0 0 8px #00d4ff);">
+                <g stroke="#00d4ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none">
+                  <path d="M25 85 C25 60 15 50 15 45 C15 35 25 35 30 45 L35 55" />
+                  <path d="M35 55 L35 25 C35 15 48 15 48 25 L48 50" />
+                  <path d="M48 50 L48 15 C48 5 61 5 61 15 L61 50" />
+                  <path d="M61 50 L61 25 C61 15 74 15 74 25 L74 55" />
+                  <path d="M74 55 L74 40 C74 30 87 30 87 40 L87 65 C87 80 70 85 55 85 L25 85" />
+                </g>
+              </svg>
+            </span>
           </div>
           <div class="ssout">
             <span class="ssout-lbl">OUTPUT →</span>
-            <span class="ssout-txt">Hola, mundo</span>
+            <span class="ssout-txt" id="ss-text" style="transition: opacity 0.2s ease;">Hola, mundo</span>
           </div>
         </div>
       </div>
@@ -95,7 +105,7 @@
           <span class="pill">GitHub Actions</span>
         </div>
         <div class="plinks">
-          <a href="#" class="plink-btn plink-demo" target="_blank">
+          <a href="https://signspeak-frontend-web.vercel.app" class="plink-btn plink-demo" target="_blank">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
             Ver demo
           </a>
@@ -107,7 +117,7 @@
       </div>
     </div>
 
-    <!-- AI Waiter -->
+    <!-- Orderly -->
     <div class="pcard reveal rd1">
       <div class="ppreview">
         <div class="prev-ai">
@@ -115,7 +125,7 @@
             <div class="dot" style="background:#ff5f57"></div>
             <div class="dot" style="background:#febc2e"></div>
             <div class="dot" style="background:#28c840"></div>
-            <span class="bar-label">ai-waiter · hf.space</span>
+            <span class="bar-label">orderly · vercel.app</span>
           </div>
           <div class="bubble bu">¿Qué me recomiendas de postre?</div>
           <div class="bubble bb">¡Tenemos flan napolitano recién hecho y pastel tres leches! 🍮</div>
@@ -133,15 +143,15 @@
       </div>
       <div class="pinfo">
         <div class="ptag">02 · IA + Voz</div>
-        <h3 class="ptitle">AI Waiter</h3>
+        <h3 class="ptitle">Orderly</h3>
         <p class="pdesc">Asistente de restaurante con voz generada por IA. Recomienda platillos, toma pedidos y responde preguntas en lenguaje natural.</p>
         <div class="pstack">
           <span class="pill">FastAPI</span><span class="pill">React</span>
           <span class="pill">Edge-TTS</span><span class="pill">LLM API</span>
-          <span class="pill">HuggingFace</span>
+          <span class="pill">AI Agent</span>
         </div>
         <div class="plinks">
-          <a href="#" class="plink-btn plink-demo" target="_blank">
+          <a href="https://orderly-frontend-sand.vercel.app" class="plink-btn plink-demo" target="_blank">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
             Ver demo
           </a>
@@ -153,41 +163,6 @@
       </div>
     </div>
 
-    <!-- Dispatch -->
-    <div class="pcard reveal rd2">
-      <div class="ppreview">
-        <div class="prev-dp">
-          <div class="dphd">
-            <div class="dpav">🚚</div>
-            <div class="dpnm">Dispatch Bot</div>
-            <div class="dpst"><span style="width:5px;height:5px;border-radius:50%;background:#25D366;display:inline-block"></span>En línea</div>
-          </div>
-          <div class="dpmsg dpin">📦 Pedido #1042 — 2x Tacos · Col. Centro</div>
-          <div class="dpmsg dpout" style="align-self:flex-end">Asignado a Manuel ✓</div>
-          <div class="dpbadge">PEDIDO DESPACHADO ✓</div>
-        </div>
-      </div>
-      <div class="pinfo">
-        <div class="ptag">03 · Backend + Mensajería</div>
-        <h3 class="ptitle">Dispatch</h3>
-        <p class="pdesc">Sistema de despacho de pedidos integrado con WhatsApp. Manejo de eventos asíncronos con Redis para negocios de entrega a domicilio.</p>
-        <div class="pstack">
-          <span class="pill">FastAPI</span><span class="pill">Redis</span>
-          <span class="pill">WhatsApp API</span><span class="pill">Python</span>
-          <span class="pill">Railway</span>
-        </div>
-        <div class="plinks">
-          <a href="#" class="plink-btn plink-demo" target="_blank">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
-            Ver demo
-          </a>
-          <a href="https://github.com/alanctinaDev" class="plink-btn plink-gh" target="_blank">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            Repositorio
-          </a>
-        </div>
-      </div>
-    </div>
 
   </div><!-- /projects-list -->
 
